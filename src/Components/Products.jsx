@@ -3,12 +3,13 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { useDispatch, useSelector } from "react-redux";
 import { add, remove } from "../Stroes/cartSlice";
+import ScrollReveal from "scrollreveal";
 
 
 //function start
 const Products = () => {
 
-  ScrollReveal().reveal('.reveal-element');
+
 
 const sr= ScrollReveal({
   origin:"top",
@@ -51,6 +52,17 @@ sr.reveal(`.product_data`)
   useEffect(() => {
     apicall()
     console.log("----------------------------");
+    
+
+const sr= ScrollReveal({
+  origin:"top",
+  distance:"60px",
+  duration:2500,
+  delay:300,
+  reset:true
+})
+
+sr.reveal(`.product_data`)
 
   }, []);
   console.log(products);
