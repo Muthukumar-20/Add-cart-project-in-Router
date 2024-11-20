@@ -9,7 +9,7 @@ import ScrollReveal from "scrollreveal";
 //function start
 const Products = () => {
 
-
+  ScrollReveal().reveal('.reveal-element');
 
 const sr= ScrollReveal({
   origin:"top",
@@ -53,16 +53,6 @@ sr.reveal(`.product_data`)
     apicall()
     console.log("----------------------------");
     
-
-const sr= ScrollReveal({
-  origin:"top",
-  distance:"60px",
-  duration:2500,
-  delay:300,
-  reset:true
-})
-
-sr.reveal(`.product_data`)
 
   }, []);
   console.log(products);
