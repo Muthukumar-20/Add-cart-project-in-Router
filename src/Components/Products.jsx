@@ -7,6 +7,16 @@ import { add, remove } from "../Stroes/cartSlice";
 
 //function start
 const Products = () => {
+const sr= ScrollReveal({
+  origin:"top",
+  distance:"60px",
+  duration:2500,
+  delay:300,
+  reset:true
+})
+
+sr.reveal(`.product_data`)
+
   const CartProducts = useSelector((state) => state.cart);
   const dispatch = useDispatch();
 
@@ -44,7 +54,7 @@ const Products = () => {
 
   return (
     <>
-      <div className="flex justify-center relative z-0">
+      <div className="flex justify-center relative z-0 product_data">
         <div className="grid sm:grid-cols-4 gird-cols-1 gap-12 place-content-center ">
           {products.map((product) => (
             <div className="border p-2 h-96 w-72 shadow-xl grid gap-1 font-Righteous place-content-center">

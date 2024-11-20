@@ -2,10 +2,11 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 const NavBar = () => {
+ 
   const CartProducts = useSelector((state) => state.cart);
   return (
     <>
-      <nav className="flex flex-col  sticky top-0 z-20 bg-white">
+      <nav className="flex flex-col  sticky top-0 z-20 bg-white ">
         <div className="flex sm:justify-around">
           <div className="flex  sm:h-5 sm:w-1/3 sm:relative left-11">
             <img src="/src/assets/32027446_7889361.jpg" Name='h-14  pl-10 mt-1' alt="" />
