@@ -7,6 +7,9 @@ import { add, remove } from "../Stroes/cartSlice";
 
 //function start
 const Products = () => {
+
+
+
 const sr= ScrollReveal({
   origin:"top",
   distance:"60px",
