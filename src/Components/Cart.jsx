@@ -6,12 +6,12 @@ import { remove } from "../Stroes/cartSlice";
 
 const Cart = () => {
   const dispatch = useDispatch();
-  const products = useSelector((state) => state.cart);
+  const products = useSelector((state) => state.cart); 
 
   const [productCount, setProductCount] = useState(
     products.reduce((counts, product) => {
       counts[product.id] = 1; // Default count for each product is 1
-      return counts;
+      return counts
     }, {})
   );
 
